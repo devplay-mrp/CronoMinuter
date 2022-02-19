@@ -1,0 +1,120 @@
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-family: cursive;
+    color: #b9b9b9;
+}
+
+.cronometro-container {
+    position: relative;
+}
+
+.cronometro-container,
+.cronometro,
+.cronometro-border {
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 30px;
+    top: 0;
+    left: 0;   
+}
+
+.cronometro {
+    padding: 70px 0px;
+    
+    text-align: center;
+    position: absolute;
+    
+}
+
+.cronometro-border {
+    border: 4px solid mediumseagreen;
+    border-radius: 100%;
+    position: absolute;
+    
+}
+
+.cronometro-border::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    border: 5px solid mediumvioletred;
+    border-radius: 100%;
+    top: 20px;
+    position: absolute;
+}
+
+.cronometro-min {
+    
+    font-size: 100px;
+}
+
+.decor {
+    font-size: 40px;
+    color: mediumvioletred;
+}
+
+.cronometro-seg {
+    font-size: 70px;
+}
+
+.cronometro-cents {
+    color: mediumvioletred;
+    display: inline-block;
+    text-align: left;
+    width: 22px;
+    font-size: 35px;
+}
+
+.rotar {
+    animation: rotar infinite 1s;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(30deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cronometro-options {
+    margin-top: 30px;
+      
+}
+
+.cronometro-options button {
+    
+  font-family: sans-serif;
+  font-weight: bold;
+  color: mediumspringgreen;
+  letter-spacing: 2px; 
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+
+}
+
+.cronometro-options button:active {
+    color: mediumvioletred;
+}
+
+
+
+
+
